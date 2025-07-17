@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   const handleWhatsApp = () => {
-    window.open("https://wa.me/27123456789", "_blank");
+    window.open("https://wa.me/27606095887", "_blank");
   };
 
   return (
@@ -45,7 +45,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-ubuntu-orange" />
-                <span className="text-sm">+27 12 345 6789</span>
+                <span className="text-sm">+27 60 609 5887</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="w-4 h-4 text-ubuntu-orange" />
