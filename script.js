@@ -76,33 +76,64 @@ document.addEventListener('DOMContentLoaded', function() {
             message: formData.get('message')
         };
 
-        // Simulate form submission
+        // Send booking via WhatsApp
+        sendBookingToWhatsApp(bookingData);
+        
+        // Show success message
         showSuccessMessage();
         bookingForm.reset();
     });
+
+    function sendBookingToWhatsApp(bookingData) {
+        const phoneNumber = '27606095887'; // WhatsApp number for LAPS Entertainment Centre
+        
+        // Create booking message
+        let message = `🏢 *LAPS Entertainment Centre - New Booking Request*\n\n`;
+        message += `👤 *Name:* ${bookingData.name}\n`;
+        message += `📧 *Email:* ${bookingData.email}\n`;
+        message += `📞 *Phone:* ${bookingData.phone}\n`;
+        message += `🎯 *Service:* ${bookingData.service}\n`;
+        message += `📅 *Date:* ${bookingData.date}\n`;
+        message += `⏰ *Time:* ${bookingData.time}\n`;
+        
+        if (bookingData.message && bookingData.message.trim() !== '') {
+            message += `💬 *Message:* ${bookingData.message}\n`;
+        }
+        
+        message += `\n✨ Thank you for choosing LAPS Entertainment Centre!`;
+        
+        // Encode message for URL
+        const encodedMessage = encodeURIComponent(message);
+        
+        // Create WhatsApp URL
+        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+        
+        // Open WhatsApp
+        window.open(whatsappUrl, '_blank');
+    }
 
     function showSuccessMessage() {
         // Create success message element
         const successMessage = document.createElement('div');
         successMessage.className = 'success-message show';
         successMessage.innerHTML = `
-            <h3>Booking Submitted Successfully! 🎉</h3>
-            <p>Thank you for your booking request. We'll contact you within 24 hours to confirm your appointment.</p>
-            <p>For urgent inquiries, please call us at <strong>+27 60 609 5887</strong> or send us a WhatsApp message.</p>
+            <h3>Booking Request Prepared! 🎉</h3>
+            <p>Your booking details have been prepared for WhatsApp. Please send the message to complete your booking request.</p>
+            <p>We'll respond to confirm your appointment as soon as possible.</p>
         `;
 
         // Insert success message before the form
         const formContainer = document.querySelector('.booking-form-container');
         formContainer.insertBefore(successMessage, bookingForm);
 
-        // Hide success message after 10 seconds
+        // Hide success message after 8 seconds
         setTimeout(() => {
             successMessage.classList.remove('show');
             successMessage.classList.add('hide');
             setTimeout(() => {
                 successMessage.remove();
             }, 500);
-        }, 10000);
+        }, 8000);
     }
 
     // Set minimum date to today
