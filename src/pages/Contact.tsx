@@ -20,7 +20,7 @@ const Contact = () => {
   };
 
   const handleCall = () => {
-    window.open("tel:+27123456789", "_self");
+    window.open("tel:+27606095887", "_self");
   };
 
   const handleEmail = () => {
