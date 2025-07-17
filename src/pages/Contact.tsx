@@ -15,7 +15,7 @@ import {
 const Contact = () => {
   const handleWhatsApp = () => {
     const message = "Hello! I'd like to know more about LAPS Entertainment Centre services.";
-    const phoneNumber = "27123456789";
+    const phoneNumber = "27606095887";
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, "_blank");
   };
 
@@ -57,7 +57,7 @@ const Contact = () => {
                   <Phone className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-earth-brown mb-3">Call Us</h3>
-                <p className="text-gray-600 mb-4">+27 12 345 6789</p>
+                <p className="text-gray-600 mb-4">+27 60 609 5887</p>
                 <Button 
                   onClick={handleCall}
                   className="bg-baobab-green hover:bg-green-700 text-white hover-lift"
@@ -158,9 +158,9 @@ const Contact = () => {
                   <div>
                     <h3 className="text-xl font-semibold text-savanna-gold mb-2">Contact Numbers</h3>
                     <div className="text-gray-200 space-y-1">
-                      <p>Main Line: +27 12 345 6789</p>
-                      <p>WhatsApp: +27 12 345 6789</p>
-                      <p>Emergency: +27 82 123 4567</p>
+                      <p>Main Line: +27 60 609 5887</p>
+                      <p>WhatsApp: +27 60 609 5887</p>
+                      <p>Emergency: +27 60 609 5887</p>
                     </div>
                   </div>
                 </div>
