@@ -18,13 +18,21 @@ import {
   MapPin
 } from "lucide-react";
 
+// Import custom service images
+import carWashImage from "@/assets/car-wash-service.jpg";
+import shisanyamaImage from "@/assets/shisanyama-braai.jpg";
+import barRestaurantImage from "@/assets/bar-restaurant.jpg";
+import accommodationImage from "@/assets/accommodation-room.jpg";
+import conferenceImage from "@/assets/conference-facilities.jpg";
+import poolLapaImage from "@/assets/swimming-pool-lapa.jpg";
+
 const Services = () => {
   const services = [
     {
       icon: Car,
       title: "Full Car Wash Services",
       description: "Professional car cleaning and detailing",
-      image: "https://images.unsplash.com/photo-1493962853295-0fd70327578a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: carWashImage,
       features: [
         "Exterior wash and wax",
         "Interior vacuuming and cleaning",
@@ -40,7 +48,7 @@ const Services = () => {
       icon: UtensilsCrossed,
       title: "Shisanyama & Traditional Meals",
       description: "Authentic South African grilled food experience",
-      image: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: shisanyamaImage,
       features: [
         "Traditional braai and grilled meats",
         "Boerewors, chicken, and beef specialties",
@@ -56,7 +64,7 @@ const Services = () => {
       icon: Wine,
       title: "Liquor Bar & Restaurant",
       description: "Full bar service with local and imported beverages",
-      image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: barRestaurantImage,
       features: [
         "Premium local and imported spirits",
         "Local craft beers and ciders",
@@ -72,7 +80,7 @@ const Services = () => {
       icon: Bed,
       title: "Accommodation Services",
       description: "Comfortable rooms for overnight stays",
-      image: "https://images.unsplash.com/photo-1466721591366-2d5fba72006d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: accommodationImage,
       features: [
         "Clean, comfortable rooms",
         "En-suite bathrooms",
@@ -88,7 +96,7 @@ const Services = () => {
       icon: Users,
       title: "Conference Facilities",
       description: "Professional meeting and event spaces",
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: conferenceImage,
       features: [
         "Fully equipped conference rooms",
         "Audio-visual equipment",
@@ -104,7 +112,7 @@ const Services = () => {
       icon: Waves,
       title: "Swimming Pool & Lapa",
       description: "Relaxation and entertainment area",
-      image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+      image: poolLapaImage,
       features: [
         "Crystal clear swimming pool",
         "Traditional lapa area",
