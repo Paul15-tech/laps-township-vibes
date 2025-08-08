@@ -20,11 +20,11 @@ const Contact = () => {
   };
 
   const handleCall = () => {
-    window.open("tel:+27606095887", "_self");
+    window.open("tel:060609587", "_self");
   };
 
   const handleEmail = () => {
-    window.open("mailto:info@lapsentertainment.co.za", "_self");
+    window.open("mailto:mohlekhup1@gmail.com", "_self");
   };
 
   const handleDirections = () => {
@@ -57,7 +57,7 @@ const Contact = () => {
                   <Phone className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-earth-brown mb-3">Call Us</h3>
-                <p className="text-gray-600 mb-4">+27 60 609 5887</p>
+                <p className="text-gray-600 mb-4">060 609 5887</p>
                 <Button 
                   onClick={handleCall}
                   className="bg-baobab-green hover:bg-green-700 text-white hover-lift"
@@ -89,7 +89,7 @@ const Contact = () => {
                   <Mail className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-earth-brown mb-3">Email Us</h3>
-                <p className="text-gray-600 mb-4 text-sm">info@lapsentertainment.co.za</p>
+                <p className="text-gray-600 mb-4 text-sm">mohlekhup1@gmail.com</p>
                 <Button 
                   onClick={handleEmail}
                   className="bg-ubuntu-orange hover:bg-orange-600 text-white hover-lift"
@@ -158,9 +158,9 @@ const Contact = () => {
                   <div>
                     <h3 className="text-xl font-semibold text-savanna-gold mb-2">Contact Numbers</h3>
                     <div className="text-gray-200 space-y-1">
-                      <p>Main Line: +27 60 609 5887</p>
-                      <p>WhatsApp: +27 60 609 5887</p>
-                      <p>Emergency: +27 60 609 5887</p>
+                      <p>Main Line: 060 609 5887</p>
+                      <p>WhatsApp: 060 609 5887</p>
+                      <p>Emergency: 060 609 5887</p>
                     </div>
                   </div>
                 </div>
@@ -170,8 +170,8 @@ const Contact = () => {
                   <div>
                     <h3 className="text-xl font-semibold text-savanna-gold mb-2">Email & Social</h3>
                     <div className="text-gray-200 space-y-1">
-                      <p>General: info@lapsentertainment.co.za</p>
-                      <p>Bookings: bookings@lapsentertainment.co.za</p>
+                      <p>General: mohlekhup1@gmail.com</p>
+                      <p>Bookings: mohlekhup1@gmail.com</p>
                       <div className="flex space-x-3 mt-3">
                         <Button variant="ghost" size="sm" className="text-savanna-gold hover:text-white p-0">
                           <Facebook className="w-5 h-5" />

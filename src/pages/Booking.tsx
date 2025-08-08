@@ -291,7 +291,7 @@ const Booking = () => {
                     * Required fields. We'll contact you within 24 hours to confirm your booking.
                   </p>
                   <p className="mt-2">
-                    For immediate assistance, call us at <strong>+27 12 345 6789</strong>
+                    For immediate assistance, call us at <strong>060 609 5887</strong>
                   </p>
                 </div>
               </form>
