@@ -12,6 +12,12 @@ import Services from "./pages/Services";
 import Pricing from "./pages/Pricing";
 import Booking from "./pages/Booking";
 import Contact from "./pages/Contact";
+import CarWashService from "./pages/CarWashService";
+import ShisanyamaService from "./pages/ShisanyamaService";
+import BarRestaurantService from "./pages/BarRestaurantService";
+import AccommodationService from "./pages/AccommodationService";
+import ConferenceService from "./pages/ConferenceService";
+import PoolLapaService from "./pages/PoolLapaService";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +34,12 @@ const App = () => (
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/services" element={<Services />} />
+              <Route path="/services/car-wash" element={<CarWashService />} />
+              <Route path="/services/shisanyama" element={<ShisanyamaService />} />
+              <Route path="/services/bar-restaurant" element={<BarRestaurantService />} />
+              <Route path="/services/accommodation" element={<AccommodationService />} />
+              <Route path="/services/conference" element={<ConferenceService />} />
+              <Route path="/services/pool-lapa" element={<PoolLapaService />} />
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/booking" element={<Booking />} />
               <Route path="/contact" element={<Contact />} />

@@ -33,6 +33,7 @@ const Services = () => {
       title: "Full Car Wash Services",
       description: "Professional car cleaning and detailing",
       image: carWashImage,
+      link: "/services/car-wash",
       features: [
         "Exterior wash and wax",
         "Interior vacuuming and cleaning",
@@ -49,6 +50,7 @@ const Services = () => {
       title: "Shisanyama & Traditional Meals",
       description: "Authentic South African grilled food experience",
       image: shisanyamaImage,
+      link: "/services/shisanyama",
       features: [
         "Traditional braai and grilled meats",
         "Boerewors, chicken, and beef specialties",
@@ -65,6 +67,7 @@ const Services = () => {
       title: "Liquor Bar & Restaurant",
       description: "Full bar service with local and imported beverages",
       image: barRestaurantImage,
+      link: "/services/bar-restaurant",
       features: [
         "Premium local and imported spirits",
         "Local craft beers and ciders",
@@ -81,6 +84,7 @@ const Services = () => {
       title: "Accommodation Services",
       description: "Comfortable rooms for overnight stays",
       image: accommodationImage,
+      link: "/services/accommodation",
       features: [
         "Clean, comfortable rooms",
         "En-suite bathrooms",
@@ -97,6 +101,7 @@ const Services = () => {
       title: "Conference Facilities",
       description: "Professional meeting and event spaces",
       image: conferenceImage,
+      link: "/services/conference",
       features: [
         "Fully equipped conference rooms",
         "Audio-visual equipment",
@@ -113,6 +118,7 @@ const Services = () => {
       title: "Swimming Pool & Lapa",
       description: "Relaxation and entertainment area",
       image: poolLapaImage,
+      link: "/services/pool-lapa",
       features: [
         "Crystal clear swimming pool",
         "Traditional lapa area",
@@ -146,46 +152,60 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {services.map((service, index) => (
-              <Card key={index} className="group hover-lift border-2 hover:border-ubuntu-orange transition-all duration-300 overflow-hidden">
-                <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  <div className="absolute top-4 left-4">
-                    <div className="w-12 h-12 bg-gradient-african rounded-full flex items-center justify-center">
-                      <service.icon className="w-6 h-6 text-white" />
+              <Link key={index} to={service.link} className="block">
+                <Card className="group hover-lift border-2 hover:border-ubuntu-orange transition-all duration-300 overflow-hidden cursor-pointer">
+                  <div className="relative h-48 overflow-hidden">
+                    <img 
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                    <div className="absolute top-4 left-4">
+                      <div className="w-12 h-12 bg-gradient-african rounded-full flex items-center justify-center">
+                        <service.icon className="w-6 h-6 text-white" />
+                      </div>
+                    </div>
+                    <div className="absolute bottom-4 right-4">
+                      <div className="bg-white/20 backdrop-blur-sm rounded-full p-2">
+                        <ArrowRight className="w-5 h-5 text-white" />
+                      </div>
                     </div>
                   </div>
-                </div>
-                
-                <CardHeader>
-                  <CardTitle className="text-2xl text-earth-brown">{service.title}</CardTitle>
-                  <p className="text-gray-600">{service.description}</p>
-                  <div className="flex items-center gap-4 text-sm">
-                    <div className="flex items-center text-ubuntu-orange">
-                      <Clock className="w-4 h-4 mr-1" />
-                      {service.duration}
+                  
+                  <CardHeader>
+                    <CardTitle className="text-2xl text-earth-brown group-hover:text-ubuntu-orange transition-colors">
+                      {service.title}
+                    </CardTitle>
+                    <p className="text-gray-600">{service.description}</p>
+                    <div className="flex items-center gap-4 text-sm">
+                      <div className="flex items-center text-ubuntu-orange">
+                        <Clock className="w-4 h-4 mr-1" />
+                        {service.duration}
+                      </div>
+                      <div className="flex items-center text-baobab-green font-semibold">
+                        {service.pricing}
+                      </div>
                     </div>
-                    <div className="flex items-center text-baobab-green font-semibold">
-                      {service.pricing}
-                    </div>
-                  </div>
-                </CardHeader>
-                
-                <CardContent>
-                  <ul className="space-y-2 mb-6">
-                    {service.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center text-gray-600">
-                        <Sparkles className="w-4 h-4 text-ubuntu-orange mr-2 flex-shrink-0" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
-              </Card>
+                  </CardHeader>
+                  
+                  <CardContent>
+                    <ul className="space-y-2 mb-6">
+                      {service.features.slice(0, 3).map((feature, featureIndex) => (
+                        <li key={featureIndex} className="flex items-center text-gray-600">
+                          <Sparkles className="w-4 h-4 text-ubuntu-orange mr-2 flex-shrink-0" />
+                          {feature}
+                        </li>
+                      ))}
+                      {service.features.length > 3 && (
+                        <li className="text-ubuntu-orange font-medium">
+                          + {service.features.length - 3} more features
+                        </li>
+                      )}
+                    </ul>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
         </div>
