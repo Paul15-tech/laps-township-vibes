@@ -58,11 +58,34 @@ const Booking = () => {
       return;
     }
 
+    // Format booking details for WhatsApp
+    const whatsappMessage = `*New Booking Request*
+
+*Customer Details:*
+Name: ${formData.name}
+Phone: ${formData.phone}
+${formData.email ? `Email: ${formData.email}` : ''}
+
+*Booking Details:*
+Service: ${formData.service}
+Date: ${formData.date}
+${formData.time ? `Time: ${formData.time}` : ''}
+${formData.guests ? `Number of Guests: ${formData.guests}` : ''}
+
+${formData.message ? `*Special Requests:*\n${formData.message}` : ''}
+
+Please confirm availability and contact the customer.`;
+
+    // Send to WhatsApp
+    const whatsappNumber = "27606095887"; // Remove spaces and add country code
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    
+    // Open WhatsApp
+    window.open(whatsappUrl, '_blank');
+
     // Show success message
     setIsSubmitted(true);
     toast.success("Booking request submitted successfully! We'll contact you soon to confirm.");
-    
-    console.log("Booking submitted:", formData);
   };
 
   if (isSubmitted) {
