@@ -31,17 +31,17 @@ const CarWashService = () => {
             Back to Services
           </Link>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
-              <h1 className="text-5xl md:text-6xl font-bold text-earth-brown mb-6">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-earth-brown mb-6">
                 Professional <span className="text-ubuntu-orange">Car Wash</span>
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8">
                 Keep your vehicle looking pristine with our professional car wash services. 
                 We use eco-friendly products and state-of-the-art equipment to ensure your car 
                 gets the care it deserves.
               </p>
-              <div className="flex items-center gap-6 mb-8">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mb-8">
                 <div className="flex items-center text-ubuntu-orange">
                   <Clock className="w-5 h-5 mr-2" />
                   <span className="font-semibold">30-90 minutes</span>
@@ -62,7 +62,7 @@ const CarWashService = () => {
               <img 
                 src={carWashImage}
                 alt="Professional Car Wash Service"
-                className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
+                className="rounded-2xl shadow-2xl w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-2xl" />
             </div>
@@ -74,11 +74,11 @@ const CarWashService = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-earth-brown mb-4">Service Packages</h2>
-            <p className="text-xl text-gray-600">Choose the perfect package for your vehicle</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-earth-brown mb-4">Service Packages</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600">Choose the perfect package for your vehicle</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {services.map((service, index) => (
               <Card key={index} className="hover-lift border-2 hover:border-ubuntu-orange transition-all duration-300">
                 <CardHeader className="text-center">
@@ -102,11 +102,11 @@ const CarWashService = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-earth-brown mb-4">What's Included</h2>
-            <p className="text-xl text-gray-600">Every car wash service includes these professional treatments</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-earth-brown mb-4">What's Included</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600">Every car wash service includes these professional treatments</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {features.map((feature, index) => (
               <div key={index} className="flex items-center p-6 bg-white rounded-lg shadow-md hover-lift">
                 <CheckCircle className="w-6 h-6 text-baobab-green mr-4 flex-shrink-0" />
@@ -121,8 +121,8 @@ const CarWashService = () => {
       <section className="py-20 bg-earth-brown text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-savanna-gold mb-4">Why Choose Our Car Wash?</h2>
-            <p className="text-xl text-gray-200">Professional service with attention to detail</p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-savanna-gold mb-4">Why Choose Our Car Wash?</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-200">Professional service with attention to detail</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

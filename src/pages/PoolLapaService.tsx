@@ -31,17 +31,17 @@ const PoolLapaService = () => {
             Back to Services
           </Link>
           
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div>
-              <h1 className="text-5xl md:text-6xl font-bold text-earth-brown mb-6">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-earth-brown mb-6">
                 Swimming Pool & <span className="text-ubuntu-orange">Lapa</span>
               </h1>
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-8">
                 Cool off in our crystal-clear swimming pool and relax in our traditional African lapa. 
                 Perfect for families, groups, or anyone looking to unwind in a beautiful, 
                 peaceful setting with authentic South African charm.
               </p>
-              <div className="flex items-center gap-6 mb-8">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6 mb-8">
                 <div className="flex items-center text-ubuntu-orange">
                   <Clock className="w-5 h-5 mr-2" />
                   <span className="font-semibold">Daily access</span>

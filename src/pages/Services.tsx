@@ -137,10 +137,10 @@ const Services = () => {
       {/* Hero Section */}
       <section className="relative py-20 african-pattern">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-earth-brown mb-6 fade-in">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-earth-brown mb-6 fade-in">
             Our <span className="text-ubuntu-orange">Services</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto slide-up">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 max-w-3xl mx-auto slide-up">
             From professional car care to authentic African cuisine, accommodation to entertainment - 
             we offer everything you need under one roof.
           </p>
@@ -150,7 +150,7 @@ const Services = () => {
       {/* Services Grid */}
       <section className="py-20 bg-gradient-to-b from-white to-orange-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
             {services.map((service, index) => (
               <Link key={index} to={service.link} className="block">
                 <Card className="group hover-lift border-2 hover:border-ubuntu-orange transition-all duration-300 overflow-hidden cursor-pointer">

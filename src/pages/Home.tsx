@@ -50,13 +50,13 @@ const Home = () => {
           }}
         />
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 fade-in">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 fade-in">
             Welcome to <span className="text-savanna-gold">LAPS</span>
           </h1>
-          <h2 className="text-2xl md:text-3xl mb-8 text-gray-200 slide-up">
+          <h2 className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-8 text-gray-200 slide-up">
             Entertainment Centre
           </h2>
-          <p className="text-xl md:text-2xl mb-12 max-w-2xl mx-auto slide-up">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-12 max-w-2xl mx-auto slide-up">
             Your premier black-owned township destination in Moletji for car wash, 
             shisanyama, accommodation, and unforgettable experiences.
           </p>
@@ -79,8 +79,8 @@ const Home = () => {
       <section className="py-20 bg-gradient-to-b from-white to-orange-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-earth-brown mb-6">Our Services</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-earth-brown mb-6">Our Services</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
               From car care to culinary delights, accommodation to entertainment - 
               we've got everything you need for a complete experience.
             </p>
@@ -115,15 +115,15 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-savanna-gold">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6 text-savanna-gold">
                 Proudly Black-Owned
               </h2>
-              <p className="text-xl mb-6 text-gray-200">
+              <p className="text-base sm:text-lg md:text-xl mb-6 text-gray-200">
                 Based in the heart of Moletji, LAPS Entertainment Centre is a testament to 
                 township entrepreneurship and community spirit. We're more than just a business - 
                 we're a cornerstone of our community.
               </p>
-              <p className="text-lg mb-8 text-gray-300">
+              <p className="text-sm sm:text-base md:text-lg mb-8 text-gray-300">
                 Our mission is to provide exceptional services while creating jobs and 
                 opportunities for our local community. Every rand spent here supports 
                 black economic empowerment and township development.
@@ -150,8 +150,8 @@ const Home = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-african text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready for an Amazing Experience?</h2>
-          <p className="text-xl mb-8 text-gray-100">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-6">Ready for an Amazing Experience?</h2>
+          <p className="text-base sm:text-lg md:text-xl mb-8 text-gray-100">
             Book your service today and discover why LAPS Entertainment Centre 
             is Moletji's premier destination for food, fun, and relaxation.
           </p>
