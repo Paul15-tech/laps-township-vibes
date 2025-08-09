@@ -38,23 +38,6 @@ const Home = () => {
     }
   ];
 
-  const testimonials = [
-    {
-      name: "Thabo Mampana",
-      rating: 5,
-      comment: "Best shisanyama in Moletji! Great food and atmosphere."
-    },
-    {
-      name: "Sarah Ledwaba",  
-      rating: 5,
-      comment: "Excellent car wash service. My car looks brand new!"
-    },
-    {
-      name: "Moses Raphela",
-      rating: 5,
-      comment: "Perfect venue for our company conference. Highly recommended!"
-    }
-  ];
 
   return (
     <div className="min-h-screen">
@@ -163,33 +146,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-20 bg-gradient-to-b from-orange-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-earth-brown mb-6">What Our Customers Say</h2>
-            <p className="text-xl text-gray-600">
-              Don't just take our word for it - hear from our satisfied customers
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="hover-lift border-2 hover:border-ubuntu-orange transition-all duration-300">
-                <CardContent className="p-8">
-                  <div className="flex mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-savanna-gold fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-gray-600 mb-6 italic">"{testimonial.comment}"</p>
-                  <p className="font-semibold text-earth-brown">- {testimonial.name}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-african text-white">

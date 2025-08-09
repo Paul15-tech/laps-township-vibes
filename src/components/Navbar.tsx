@@ -49,9 +49,6 @@ const Navbar = () => {
                 {item.name}
               </Link>
             ))}
-            <Button className="bg-ubuntu-orange hover:bg-orange-600 text-white">
-              Book Now
-            </Button>
           </div>
 
           {/* Mobile menu button */}
@@ -85,9 +82,6 @@ const Navbar = () => {
                   {item.name}
                 </Link>
               ))}
-              <Button className="w-full mt-4 bg-ubuntu-orange hover:bg-orange-600 text-white">
-                Book Now
-              </Button>
             </div>
           </div>
         )}
