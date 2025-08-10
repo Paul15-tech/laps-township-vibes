@@ -25,12 +25,15 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center hover-lift">
+          <Link to="/" className="flex items-center space-x-3 hover-lift">
             <img 
               src="/lovable-uploads/eea1636e-6c50-4d20-a96d-9ca0828b857b.png" 
               alt="LAPS Entertainment Centre Logo" 
               className="h-12 w-auto"
             />
+            <div className="flex flex-col">
+              <span className="text-xl font-bold text-earth-brown">LAPS Entertainment Center</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
