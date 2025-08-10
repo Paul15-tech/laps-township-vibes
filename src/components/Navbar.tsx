@@ -1,8 +1,9 @@
 
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, MapPin } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,14 +25,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 hover-lift">
-            <div className="w-10 h-10 bg-gradient-african rounded-full flex items-center justify-center">
-              <MapPin className="w-6 h-6 text-white" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-earth-brown">LAPS</span>
-              <span className="text-xs text-ubuntu-orange">Entertainment Centre</span>
-            </div>
+          <Link to="/" className="flex items-center hover-lift">
+            <img 
+              src="/lovable-uploads/eea1636e-6c50-4d20-a96d-9ca0828b857b.png" 
+              alt="LAPS Entertainment Centre Logo" 
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation */}
