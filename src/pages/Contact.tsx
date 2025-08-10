@@ -28,8 +28,8 @@ const Contact = () => {
   };
 
   const handleDirections = () => {
-    // Coordinates: 29.318532, -23.713982
-    window.open("https://maps.google.com/?q=29.318532,-23.713982", "_blank");
+    // Replace with actual coordinates
+    window.open("https://maps.google.com/?q=Moletji,Limpopo,South+Africa", "_blank");
   };
 
   return (
@@ -105,7 +105,7 @@ const Contact = () => {
                   <Navigation className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-earth-brown mb-3">Directions</h3>
-                <p className="text-gray-600 mb-4">Stand No. 20BS Chiefskraal Moletjie</p>
+                <p className="text-gray-600 mb-4">Moletji, Limpopo</p>
                 <Button 
                   onClick={handleDirections}
                   className="bg-baobab-green hover:bg-green-700 text-white hover-lift"
@@ -133,10 +133,9 @@ const Contact = () => {
                     <h3 className="text-xl font-semibold text-savanna-gold mb-2">Our Location</h3>
                     <p className="text-gray-200">
                       LAPS Entertainment Centre<br />
-                      Stand No. 20BS Chiefskraal<br />
-                      Moletjie, Limpopo Province<br />
+                      Moletji, Limpopo Province<br />
                       South Africa<br />
-                      GPS: 29.318532, -23.713982
+                      GPS Coordinates: Available on request
                     </p>
                   </div>
                 </div>
@@ -200,7 +199,7 @@ const Contact = () => {
               <h2 className="text-4xl font-bold text-savanna-gold mb-8">Find Us on the Map</h2>
               <div className="relative h-96 rounded-lg overflow-hidden shadow-2xl">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.123456789!2d29.318532!3d-23.713982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sStand%20No.%2020BS%20Chiefskraal%20Moletjie!5e0!3m2!1sen!2sza!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3594.123456789!2d29.123456!3d-23.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sMoletji%2C%20Limpopo%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1234567890"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
