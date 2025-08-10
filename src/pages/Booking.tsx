@@ -23,18 +23,10 @@ const Booking = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const services = [
-    "Car Wash - Basic (R50)",
-    "Car Wash - Standard (R80)",  
-    "Car Wash - Premium (R150)",
-    "Shisanyama Dining",
-    "Pool Day Pass (R30 per person)",
-    "Lapa Hire - Half Day (R300)",
-    "Lapa Hire - Full Day (R500)",
-    "Conference Room - Half Day (R400)",
-    "Conference Room - Full Day (R700)",
-    "Accommodation Booking",
+    "Conference Hall - Full Day",
     "Event Package",
-    "Other - Please specify in message"
+    "Accommodation",
+    "Lapa Hire"
   ];
 
   const timeSlots = [
@@ -85,7 +77,7 @@ Please confirm availability and contact the customer.`;
 
     // Show success message
     setIsSubmitted(true);
-    toast.success("Booking request submitted successfully! We'll contact you soon to confirm.");
+    toast.success("Booking request submitted successfully! We'll contact you within an hour to confirm.");
   };
 
   if (isSubmitted) {
@@ -97,7 +89,7 @@ Please confirm availability and contact the customer.`;
             <h1 className="text-4xl font-bold text-earth-brown mb-6">Booking Confirmed!</h1>
             <p className="text-xl text-gray-600 mb-8">
               Thank you for choosing LAPS Entertainment Centre. We've received your booking request 
-              and will contact you within 24 hours to confirm all details.
+              and will contact you within an hour to confirm all details.
             </p>
             <div className="bg-orange-50 rounded-lg p-6 mb-8">
               <h3 className="text-lg font-semibold text-earth-brown mb-4">Your Booking Details:</h3>
@@ -111,7 +103,7 @@ Please confirm availability and contact the customer.`;
             </div>
             <div className="space-y-4">
               <p className="text-gray-600">
-                <strong>Next Steps:</strong> Our team will call you at {formData.phone} to confirm 
+                <strong>Next Steps:</strong> Our team will call you at {formData.phone} within an hour to confirm 
                 availability and finalize your booking.
               </p>
               <Button 
@@ -311,7 +303,7 @@ Please confirm availability and contact the customer.`;
 
                 <div className="text-center text-sm text-gray-600 pt-4">
                   <p>
-                    * Required fields. We'll contact you within 24 hours to confirm your booking.
+                    * Required fields. We'll contact you within an hour to confirm your booking.
                   </p>
                   <p className="mt-2">
                     For immediate assistance, call us at <strong>060 609 5887</strong>
@@ -361,7 +353,7 @@ Please confirm availability and contact the customer.`;
                 <h3 className="text-xl font-bold text-savanna-gold mb-3">Confirmation</h3>
                 <p className="text-gray-200">
                   All bookings are confirmed via phone call. We'll contact you 
-                  within 24 hours to finalize all details.
+                  within an hour to finalize all details.
                 </p>
               </CardContent>
             </Card>
